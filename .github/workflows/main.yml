@@ -20,9 +20,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: xcsweb/testGitHubAction/demo1@master
+    - uses: xcsweb/testGitHubAction@master
 
     # Runs a set of commands using the runners shell
+    - name: install
+      run: npm install
+
     - name: build
       uses: JamesIves/github-pages-deploy-action@master
       env:

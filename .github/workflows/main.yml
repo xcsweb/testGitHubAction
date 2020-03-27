@@ -29,6 +29,7 @@ jobs:
     - name: build
       uses: JamesIves/github-pages-deploy-action@master
       with:
+        ACCESS_TOKEN: ${{ secrets.hhh }}
         BRANCH: gh-pages
         FOLDER: ./demo1/build
         BUILD_SCRIPT: webpack

@@ -28,7 +28,7 @@ jobs:
 
     - name: build
       uses: JamesIves/github-pages-deploy-action@master
-      env:
+      with:
         BRANCH: gh-pages
-        FOLDER: demo1/build
+        FOLDER: ./demo1/build
         BUILD_SCRIPT: webpack

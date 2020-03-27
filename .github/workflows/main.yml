@@ -28,6 +28,7 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: build
+      uses: JamesIves/github-pages-deploy-action@master
       env:
         BRANCH: gh-pages
         FOLDER: demo1/build
